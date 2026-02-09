@@ -105,11 +105,30 @@ section {
 .gallery img {
   width: 33.33%;
 }
-
 /* Footer */
 footer {
   background: var(--green);
   color: #fff;
   text-align: center;
   padding: 30px;
+  
+  .lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.lang-switch button {
+  background: #0f2f24;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  background: #1f5f45;
 }
