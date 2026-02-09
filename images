@@ -1,5 +1,6 @@
-hero.jpg
-ritual.jpg
-insta1.jpg
-insta2.jpg
-insta3.jpg
+images/
+├── hero.jpg        ← Stadtbild / Café urban
+├── ritual.jpg      ← Kaffeezeremonie
+├── insta1.jpg      ← Interior
+├── insta2.jpg      ← Brunch / Dessert
+├── insta3.jpg      ← Kaffee Detail
