@@ -83,4 +83,24 @@ section {
   h1 {
     font-size: 2.2rem;
   }
+  .lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.lang-switch button {
+  background: #0f2f24;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  background: #1f5f45;
+}
 }
