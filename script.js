@@ -1,11 +1,9 @@
 function setLang(lang) {
-  document.querySelectorAll('[data-lang]').forEach(el => {
-    el.style.display =
-      el.getAttribute('data-lang') === lang ? 'block' : 'none';
+  document.querySelectorAll("[data-lang]").forEach(el => {
+    el.style.display = el.getAttribute("data-lang") === lang ? "block" : "none";
   });
 
-  document.body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  document.body.dir = lang === "ar" ? "rtl" : "ltr";
 }
 
-// Standardsprache
-setLang('de');
+setLang("de");
