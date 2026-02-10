@@ -2,116 +2,78 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Daero Café – Taste of Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daero Café</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
+
+<!-- SPRACHUMSCHALTER -->
 <div class="lang-switch">
   <button onclick="setLang('de')">DE</button>
   <button onclick="setLang('en')">EN</button>
   <button onclick="setLang('ar')">AR</button>
 </div>
+
 <!-- HERO -->
-<header class="hero">
-  <div class="overlay">
-    <h1>DAERO CAFÉ</h1>
-    <p class="subtitle">Taste of Home</p>
-    <div class="hero-buttons">
-      <a href="#menu" class="btn primary">Speisekarte ansehen</a>
-      <a href="tel:017622363619" class="btn outline">Jetzt anrufen</a>
-    </div>
+<section class="hero">
+  <div class="hero-box">
+    <h1 data-lang="de">DAERO CAFÉ</h1>
+    <h1 data-lang="en">DAERO CAFÉ</h1>
+    <h1 data-lang="ar">مقهى دايرو</h1>
+
+    <p data-lang="de">Taste of Home</p>
+    <p data-lang="en">Taste of Home</p>
+    <p data-lang="ar">طعم الوطن</p>
+
+    <a data-lang="de" class="btn" href="menu/daero-speisekarte.pdf" target="_blank">Speisekarte</a>
+    <a data-lang="en" class="btn" href="menu/daero-speisekarte.pdf" target="_blank">Menu</a>
+    <a data-lang="ar" class="btn" href="menu/daero-speisekarte.pdf" target="_blank">القائمة</a>
   </div>
-</header>
+</section>
 
 <!-- ÜBER UNS -->
 <section class="about">
-  <div class="container grid">
-    <img src="images/ritual.jpg" alt="Kaffeezeremonie">
-    <div>
-      <h2>Über uns</h2>
-      <p>
-        Kaffee ist mehr als ein Getränk – er ist ein Ritual.  
-        Im Daero Café verbinden wir Wärme, Kultur und moderne Café-Atmosphäre.
-        Ein Ort, an dem Menschen zusammenkommen und echte Momente entstehen.
-      </p>
-    </div>
+  <img src="images/ritual.jpg" alt="Kaffeezeremonie">
+
+  <div>
+    <p data-lang="de">
+      Kaffee ist mehr als ein Getränk – er ist ein Ritual.<br>
+      Ein Ort der Begegnung, Wärme und Kultur.
+    </p>
+
+    <p data-lang="en">
+      Coffee is more than a drink – it is a ritual.<br>
+      A place of warmth, culture and connection.
+    </p>
+
+    <p data-lang="ar">
+      القهوة أكثر من مجرد مشروب – إنها طقس.<br>
+      مكان للدفء والثقافة واللقاء.
+    </p>
   </div>
 </section>
 
-<!-- SPEISEKARTE -->
-<section id="menu" class="menu">
-  <h2>Speisekarte</h2>
-
-  <div class="menu-grid">
-    <div class="menu-card">
-      <h3>☕ Kaffee & Tee</h3>
-      <ul>
-        <li>Espresso</li>
-        <li>Cappuccino</li>
-        <li>Karak Tee</li>
-        <li>Daero Spezial</li>
-      </ul>
-    </div>
-
-    <div class="menu-card">
-      <h3>🍰 Desserts</h3>
-      <ul>
-        <li>Waffeln</li>
-        <li>Cheesecake</li>
-        <li>Mini Pancakes</li>
-        <li>Lotus Spezialitäten</li>
-      </ul>
-    </div>
-
-    <div class="menu-card">
-      <h3>🥑 Brunch</h3>
-      <ul>
-        <li>Shakshuka</li>
-        <li>Full</li>
-        <li>Masoob</li>
-        <li>Fata Frühstück</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ÖFFNUNGSZEITEN -->
-<section class="hours">
-  <h2>Öffnungszeiten</h2>
-  <p>Montag: <strong>Geschlossen</strong></p>
-  <p>Dienstag – Donnerstag: 11:00 – 20:00</p>
-  <p>Freitag – Sonntag: 11:00 – 22:00</p>
+<!-- GALERIE -->
+<section class="gallery">
+  <img src="images/insta1.jpg">
+  <img src="images/insta2.jpg">
+  <img src="images/insta3.jpg">
 </section>
 
 <!-- INSTAGRAM -->
 <section class="instagram">
-  <h2>Einblicke</h2>
-  <div class="insta-grid">
-    <img src="images/insta1.jpg" alt="">
-    <img src="images/insta2.jpg" alt="">
-    <img src="images/insta3.jpg" alt="">
-  </div>
-  <a href="https://www.instagram.com/daero.cafe" target="_blank" class="btn primary">
+  <a href="https://www.instagram.com/daero.cafe" target="_blank">
     @daero.cafe auf Instagram
   </a>
 </section>
 
-<!-- KONTAKT -->
-<section class="contact">
-  <h2>Standort & Kontakt</h2>
-  <p>📍 Worringer Str. 83, 40211 Düsseldorf</p>
-  <p>📞 0176 22363619</p>
-
-  <iframe
-    src="https://www.google.com/maps?q=Worringer%20Str.%2083%2040211%20Düsseldorf&output=embed"
-    loading="lazy">
-  </iframe>
-</section>
-
+<!-- FOOTER -->
 <footer>
-  <p>© Daero Café – Taste of Home</p>
+  <p>Worringer Str. 83 · 40211 Düsseldorf</p>
+  <p>Tel: 0176 22363619</p>
+  <a href="impressum.html">Impressum</a> |
+  <a href="agb.html">AGB</a>
 </footer>
 
 </body>
