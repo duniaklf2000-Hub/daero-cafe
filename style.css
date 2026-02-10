@@ -1,34 +1,23 @@
-:root {
-  --green: #0f2f24;
-  --beige: #f3e9dc;
-  --gold: #c8a46a;
-}
-
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background: var(--beige);
-  color: #222;
+  font-family: Georgia, serif;
+  background: #f3e9dc;
 }
 
-/* Sprachumschalter */
 .lang-switch {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
+  top: 15px;
+  right: 15px;
 }
 
 .lang-switch button {
-  background: var(--green);
-  color: #fff;
+  background: #0f2f24;
+  color: white;
   border: none;
   padding: 6px 10px;
   margin-left: 5px;
-  cursor: pointer;
 }
 
-/* Hero */
 .hero {
   height: 100vh;
   background: url("images/hero.jpg") center/cover no-repeat;
@@ -37,67 +26,32 @@ body {
   justify-content: center;
 }
 
-.hero-content {
-  text-align: center;
-  color: #fff;
-  background: rgba(0,0,0,0.4);
+.hero-box {
+  background: rgba(0,0,0,0.5);
+  color: white;
   padding: 40px;
+  text-align: center;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-.hero p {
-  letter-spacing: 3px;
-}
-
-/* Buttons */
 .btn {
+  display: inline-block;
+  background: #c8a46a;
+  color: black;
   padding: 10px 20px;
-  margin: 10px;
+  margin-top: 15px;
   text-decoration: none;
-  border-radius: 6px;
-}
-
-.primary {
-  background: var(--gold);
-  color: #000;
-}
-
-.outline {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-/* Sections */
-section {
-  padding: 60px 10%;
 }
 
 .about {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  padding: 60px;
 }
 
 .about img {
   width: 300px;
 }
 
-/* Menu Cards */
-.menu-cards {
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  flex: 1;
-}
-
-/* Gallery */
 .gallery {
   display: flex;
 }
@@ -105,30 +59,15 @@ section {
 .gallery img {
   width: 33.33%;
 }
-/* Footer */
-footer {
-  background: var(--green);
-  color: #fff;
+
+.instagram {
   text-align: center;
-  padding: 30px;
-  
-  .lang-switch {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
+  padding: 40px;
 }
 
-.lang-switch button {
+footer {
   background: #0f2f24;
-  color: #fff;
-  border: none;
-  margin-left: 5px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.lang-switch button:hover {
-  background: #1f5f45;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
